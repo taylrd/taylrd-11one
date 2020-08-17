@@ -1,6 +1,6 @@
 ---
 title: A post page
-date: 2018-03-21
+date: 2020-08-15
 ---
 
 There's not much here in the sample post page. Better get to work.
@@ -16,5 +16,3 @@ It looks like this:
   "templateEngineOverride": "njk,md"
 }
 ```
-
-

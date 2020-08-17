@@ -80,7 +80,7 @@ p {
 .subtitle {
 	font-size: 1.2em;
 	margin-top: 1em;
-	margin-bottom: 5em;
+	/* margin-bottom: 5em; */
 }
 
 ul,
@@ -211,14 +211,14 @@ footer {
 }
 
 .user-info button {
-	background: #1a202c;
+	background: #e3d36c;
 	border: 0;
 	border-radius: 0.5rem;
-	color: var(--white);
+	color: $accent-color;
 	display: block;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-weight: 900;
-	padding: 1rem;
+	padding: .8rem;
 	text-align: center;
 	text-decoration: none;
 }
