@@ -84,7 +84,7 @@ const loadSubscriptionContent = async (user) => {
   const token = user ? await netlifyIdentity.currentUser().jwt(true) : false;
 
   ['free', 'pro', 'premium'].forEach((type) => {
-    fetch('/.netlify/functions/get-protected-content', {
+    fetch('./.netlify/functions/get-protected-content', {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${token}`,
