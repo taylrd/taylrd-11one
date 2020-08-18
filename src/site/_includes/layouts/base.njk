@@ -18,6 +18,7 @@
     {% set js %}
     {% include "js/core.js" %}
     {% include "js/hello.js" %}
+    {% include "js/class.js" %}
     {% endset %}
     <script>
       {{ js | jsmin | safe }}

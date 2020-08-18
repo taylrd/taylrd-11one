@@ -1,12 +1,12 @@
 const content = {
 	free    : {
-		src          :
-			'https://res.cloudinary.com/taylrd/image/upload/v1597607950/5623CD5D-C2A9-4B51-B1B6-3A44892CD412_1_105_c_uehrmj.jpg?auto=format&fit=crop&w=600&h=600&q=80',
+		src          : '',
 		alt          : 'Blue boy behind the Irvine office',
 		credit       : 'Brad Taylor',
 		creditLink   : '',
-		message      : 'To view this content, you need to create an account!',
-		allowedRoles : [ 'free', 'pro', 'premium' ]
+		message      :
+			'<iframe src="https://player.vimeo.com/video/427173263" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>',
+		allowedRoles : [ 'free' ]
 	},
 	pro     : {
 		src          :
@@ -15,7 +15,7 @@ const content = {
 		credit       : 'Colour Country Aussies',
 		creditLink   : '',
 		message      : 'This is protected content! It’s only available if you have a pro plan or higher.',
-		allowedRoles : [ 'pro', 'premium' ]
+		allowedRoles : [ 'pro' ]
 	},
 	premium : {
 		src          :
@@ -38,12 +38,10 @@ exports.handler = async (event, context) => {
 		return {
 			statusCode : 402,
 			body       : JSON.stringify({
-				src        :
-					'https://res.cloudinary.com/jlengstorf/image/upload/q_auto,f_auto/v1592618179/stripe-subscription/subscription-required.jpg',
-				alt        : 'corgi in a crossed circle with the text "subscription required"',
-				credit     : 'Jason Lengstorf',
-				creditLink : 'https://dribble.com/jlengstorf',
-				message    : `This content requires a ${type} subscription`
+				src     : '/images/player.jpg',
+				alt     : 'DanceMakers Digital "subscription required"',
+				credit  : 'Zach Thompson',
+				message : `This content requires a ${type} subscription`
 			})
 		};
 	}
