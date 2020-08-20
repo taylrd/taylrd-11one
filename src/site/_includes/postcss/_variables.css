@@ -4,8 +4,9 @@ $mid: 740px;
 $wide: 1200px;
 
 /* colours */
-$page-color: #2424bb;
-$text-color: #fff;
-$accent-color: #27a4de;
-$dark-color: #000;
-
+$page-color: #434343;
+$text-color: #fffffe;
+$accent-color: #5d8aa8;
+$dark-color: #16161a;
+$tertiary-color: #4a796b;
+$bright-color: #e0923d;

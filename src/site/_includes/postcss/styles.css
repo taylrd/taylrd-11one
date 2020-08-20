@@ -21,15 +21,15 @@ html {
 
 body {
 	text-align: center;
-	background-color: $page-color;
+	background-color: $dark-color;
 	color: mix($text-color, $page-color, 90%);
-	font-family: sans-serif;
-	font-weight: 300;
+	font-family: "Operator Mono SSm A", "Operator Mono SSm B";
+	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.8;
 	min-height: 100vh;
-	background: $page-color;
-	background: url(/images/bg-grid.png), linear-gradient(320deg, $page-color 0%, $accent-color 100%);
+	background: $dark-color;
+	/* background: url(/images/bg-grid.png); */
 
 	@media (min-width: $narrow) {
 		font-size: 18px;
@@ -59,16 +59,16 @@ h3 {
 	line-height: 1;
 }
 h1 {
-	font-size: 3em;
+	font-size: 2em;
 	margin-top: 0.4em;
 	margin-bottom: 0.2em;
 	line-height: 1;
 
 	@media (min-width: $mid) {
-		font-size: 5em;
+		font-size: 3em;
 	}
 	@media (min-width: $wide) {
-		font-size: 6em;
+		font-size: 4em;
 	}
 }
 
@@ -211,11 +211,12 @@ footer {
 }
 
 .user-info button {
-	background: #e3d36c;
+	background: $tertiary-color;
 	border: 0;
 	border-radius: 0.5rem;
-	color: $accent-color;
+	color: $text-color;
 	display: block;
+	font-family: "Operator Mono SSm A", "Operator Mono SSm B";
 	font-size: 1rem;
 	font-weight: 900;
 	padding: .8rem;
@@ -248,5 +249,17 @@ footer {
 }
 
 img {
-	width: 100%;
+	width: 50%;
+}
+
+.orange {
+	color: $bright-color;
+}
+
+.blue {
+	color: $accent-color;
+}
+
+.green {
+	color: $tertiary-color;
 }
